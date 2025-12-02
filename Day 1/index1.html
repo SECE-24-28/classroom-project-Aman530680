@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Form</title>
+  </head>
+  <body>
+    <h2>Contact Form</h2>
+
+    <form action="#" method="POST">
+      <label for="fname">Full Name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter your name"
+        required
+      /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <label for="msg">Message:</label><br />
+      <textarea
+        id="msg"
+        name="message"
+        rows="4"
+        cols="30"
+        placeholder="Your message..."
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

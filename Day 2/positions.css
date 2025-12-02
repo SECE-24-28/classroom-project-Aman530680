@@ -1,0 +1,9 @@
+.Container {
+  width: 30vw;
+  height: 80vh;
+  border: 1px solid red;
+}
+.Box {
+  width: 100px;
+  height: 100px;
+}
