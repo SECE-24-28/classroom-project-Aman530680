@@ -3,7 +3,8 @@
   height: 80vh;
   border: 1px solid red;
 }
-.Box {
-  width: 100px;
-  height: 100px;
+h1 {
+  background-color: lightcoral;
+  font: weight 700px
+  color: white;
 }

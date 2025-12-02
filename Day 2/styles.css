@@ -50,7 +50,7 @@ input[type="text"] {
   border: 2px solid blue;
   padding: 5px;
 }
-/* Attribute Selector for Submit button */
+/* Attribute Selector fo Submit button */
 input[type="submit"] {
   background-color: navy;
   color: white;
