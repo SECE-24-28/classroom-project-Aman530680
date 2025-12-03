@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>All Flexbox Concepts</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">All Flexbox Concepts - Basic HTML Demo</h2>
+    <h4>1.Display:Flex</h4>
+    <div class="line"></div>
+    <p>This enables Flexbox layout on a container</p>
+    <div class="container1">
+      <div class="item1">flex 1</div>
+      <div class="item1">flex 2</div>
+      <div class="item1">flex 3</div>
+    </div>
+    <h4>2. Flex direction</h4>
+    <div class="line"></div>
+    <p>Direction of the main axis(row by default)</p>
+    <div class="container2">
+      <div class="item2">flex 1</div>
+      <div class="item2">flex 2</div>
+      <div class="item2">flex 3</div>
+    </div>
+    <h4>4. Align items with different heights</h4>
+    <div class="line"></div>
+    <p>Control alinglent along the cross axis</p>
+    <div class="container4">
+      <div class="item4 short">Short</div>
+      <div class="item4 tall">Tall</div>
+      <div class="item4 medium">Medium</div>
+    </div>
+    <h4>5. Flex Wrap</h4>
+    <div class="line"></div>
+    <p>Allows items to wrap into multiple lines</p>
+    <div class="container5">
+      <div class="item5">Box 1</div>
+      <div class="item5">Box 2</div>
+      <div class="item5">Box 3</div>
+      <div class="item5">Box 4</div>
+      <div class="item5">Box 5</div>
+      <div class="item5">Box 6</div>
+      <div class="item5">Box 7</div>
+      <div class="item5">Box 8</div>
+    </div>
+    <h4>6. Gap</h4>
+    <div class="line"></div>
+    <p>Space between items (row and column gap)</p>
+    <div class="container6">
+      <div class="item6">A</div>
+      <div class="item6">B</div>
+      <div class="item6">C</div>
+    </div>
+    <h4>7. Flex Grow</h4>
+    <div class="line"></div>
+    <p>
+      How much an item will grow relative to the rest of the flexible items
+      inside the same container.
+    </p>
+    <div class="container7">
+      <div class="item7">Grow: 1</div>
+      <div class="item7 grow-2">Grow: 2</div>
+      <div class="item7">Grow: 1</div>
+    </div>
+    <h4>8. Align Self</h4>
+    <div class="line"></div>
+    <p>Overrides the container's align-items setting for a specific item.</p>
+    <div class="container8">
+      <div class="item8 self-start">Start</div>
+      <div class="item8 self-center">Center</div>
+      <div class="item8">Default (End)</div>
+    </div>
+    <h4>9. Order</h4>
+    <div class="line"></div>
+    <p>
+      Controls the order in which items appear in the flex container (default is
+      0).
+    </p>
+    <div class="container9">
+      <div class="item9 order-3">1</div>
+      <div class="item9 order-1">2</div>
+      <div class="item9 order-2">3</div>
+      <div class="item9">Item 4 (Order: 0)</div>
+    </div>
+  </body>
+</html>
