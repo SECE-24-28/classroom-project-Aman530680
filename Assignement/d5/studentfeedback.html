@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Feedback Collector</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+      
+        #feedbackForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #20725b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background: #970404;
+        }
+        button:active {
+            transform: translateY(1px);
+        }
+        #output {
+            width: 100%;
+            max-width: 1040px;
+            margin: 20px auto;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; 
+        }       
+        .feedback-card {
+            width: 100%;
+            max-width: 300px; 
+            padding: 15px;
+            background: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            color: #697034cf; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .feedback-card h3{
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #1e5a1b;
+            font-size: 16px;
+            border-bottom: 1px dashed #aed581;
+            padding-bottom: 5px;
+        }
+        .feedback-card p{
+            margin: 6px 0;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Feedback Form</h2>
+    <form id="feedbackForm">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <select id="course" required>
+            <option value="" disabled selected>Select Course</option>
+            <option>HTML & CSS</option>
+            <option>JavaScript</option>
+            <option>React JS</option>
+            <option>Node JS</option>
+        </select>
+        <label for="rating">Rating: <span id="ratingValue">3</span> / 5</label>
+        <input type="range" id="rating" min="1" max="5" value="3" />    
+        <textarea id="feedback" placeholder="Write your feedback..." rows="4" required></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+    <div id="output"></div>
+    <script src="studentfeedback.js"></script>   
+</body>
+</html>

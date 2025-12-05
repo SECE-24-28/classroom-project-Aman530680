@@ -1,0 +1,10 @@
+let heading1 = document.getElementsByTagName("h1");
+console.log(heading1[1]);
+let cl = document.getElementsByClassName("a");
+console.log(cl[0]);
+let idd = document.getElementById("b");
+console.log(idd);
+let qr = document.querySelector(".a");
+console.log("qr");
+let qr = document.querySelectorAll("a");
+console.log("qr");

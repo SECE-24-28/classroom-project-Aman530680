@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Practice UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>DOM Manipulation Practice UI</h2>
+
+        <p id="text">samle text.</p>
+        <div class="button-group">
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="changeColor()">Change Background Color of Box</button>
+        </div>
+
+        <div id="box" class="a">AMAN KARN</div>
+
+        <div class="button-group hide-show-group">
+            <button onclick="hideBox()">Hide </button>
+            <button onclick="showBox()">Show </button>
+        </div>
+
+        <h2 class="list-heading">Add Items to List</h2>
+        <div class="add-item-group">
+            <input 
+                type="text" 
+                id="itemInput" 
+                placeholder="Enter " 
+            />
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <ul id="list">
+            
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
