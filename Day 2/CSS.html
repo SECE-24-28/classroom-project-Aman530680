@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors Box Mode</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Tag selector -->
+    <p>This paragraph is styled using tag selector.</p>
+
+    <!-- Class selector -->
+    <p class="highlight">This is highlighted text.</p>
+    <h2 class="highlight">This heading also uses the class selector.</h2>
+
+    <!-- ID selector -->
+    <div id="special-box">I am styled using ID selector.</div>
+
+    <!-- Group selector -->
+    <h2>Subheading styled with group selector</h2>
+    <h3>Another heading styled with group selector</h3>
+
+    <!-- Descendant selector -->
+    <div>
+      <span>I am a span inside a div.</span>
+    </div>
+
+    <!-- Child selector -->
+    <ul>
+      <li>Direct child list item styled</li>
+      <li>Another direct child list item</li>
+      <ol>
+        <li>Nested list item (not styled)</li>
+      </ol>
+    </ul>
+
+    <!-- Attribute selector -->
+    <form>
+      <input type="text" placeholder="Styled text input" />
+      <input type="password" placeholder="Password input (not styled)" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

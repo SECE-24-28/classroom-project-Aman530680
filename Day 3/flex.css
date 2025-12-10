@@ -1,0 +1,93 @@
+body {
+  font-family: Arial;
+}
+
+/* Common flex item style */
+.box {
+  width: 60px;
+  height: 60px;
+  background: aqua;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* display: flex */
+.example1 {
+  border: 2px solid red;
+  display: flex; /* Makes children align in a row */
+  padding: 10px;
+}
+
+/* flex-direction */
+.example2 {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  padding: 10px;
+}
+
+/*  justify-content */
+.example3 {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  padding: 10px;
+}
+
+/* align-items */
+.example4 {
+  border: 2px solid purple;
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  height: 120px;
+  padding: 10px;
+}
+
+/* d gap */
+.example5 {
+  border: 2px solid orange;
+  display: flex;
+  gap: 20px; /* Space between items */
+  padding: 10px;
+}
+/*  flex-wrap */
+.example6 {
+  border: 2px solid brown;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move to next line */
+  gap: 10px; /* Space between items */
+  width: 250px; /* Small width to force wrapping */
+  padding: 10px;
+}
+.example7 {
+  display: flex;
+  border: 2px solid black;
+  height: 150px;
+  padding: 10px;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background: aqua;
+  border: 2px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.example7 .item:nth-child(1) {
+  background-color: yellow;
+  order: 1; /* Moves it to end */
+  align-self: center; /* Aligns vertically */
+}
+
+.example7 .item:nth-child(2) {
+  background-color: lightgreen;
+  order: 1; /* Default position */
+  align-self: flex-end; /* Moves to bottom */
+}

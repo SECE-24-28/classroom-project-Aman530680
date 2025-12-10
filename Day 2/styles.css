@@ -1,0 +1,64 @@
+/* Universal Selector - applies to ALL elements */
+* {
+  font-family: Arial, sans-serif;
+  margin: 8px;
+  padding: 4px;
+}
+/* Tag Selector - applies to all <p> tags */
+p {
+  color: darkblue;
+  font-size: 16px;
+}
+/* Class Selector - applies to elements with class="highlight" */
+.highlight {
+  color: crimson;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 6px;
+}
+/* ID Selector - applies to element with id="special-box" */
+#special-box {
+  background-color: lightgreen;
+  border: 2px solid green;
+  padding: 10px;
+  color: darkgreen;
+}
+/* Another ID example */
+#main-heading {
+  color: darkred;
+  text-decoration: underline;
+}
+/* Group Selector - applies to multiple tags */
+h1,
+h2,
+h3 {
+  color: purple;
+  font-style: italic;
+}
+/* Descendant Selector - applies to <span> inside <div> */
+div span {
+  color: orange;
+  font-weight: bold;
+}
+/* Child Selector - applies only to direct children <li> of <ul> */
+ul > li {
+  color: teal;
+  list-style-type: square;
+}
+/* Attribute Selector - applies to elements with a specific  attribute */
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+}
+/* Attribute Selector fo Submit button */
+input[type="submit"] {
+  background-color: navy;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: darkred;
+}

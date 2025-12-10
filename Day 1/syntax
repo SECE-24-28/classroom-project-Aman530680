@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World Page</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html> -->
+
+
+// Correct way to print
+console.log("Hello world");
+
+// Hoisting example
+console.log(a); // undefined (due to hoisting with var)
+var a = 10;
+console.log(a); // 10
+
+// Global scope / function scope
+function testScope() {
+  var x = 5;
+  console.log("Inside function:", x);
+}
+testScope();
+// console.log(x); // ReferenceError: x is not defined
+
+// ES6 let and const
+// Temporal Dead Zone example
+let b = 20;
+b = 130;
+console.log(b); // 130
+
+// Const example
+const c = 40;
+// c = 70; //
+console.log(c); // 40
+
+// Type of Functions
+// Named Function
+function greet() {
+  return "Hello!";
+}
+console.log(greet()); // Hello!
+
+// Anonymous Function
+const greetAnon = function () {
+  return "Hi there!";
+};
+console.log(greetAnon()); // Hi there!
+//Arrow Function
+let arrow = () => {
+  console.log("arrow functiono call ");
+};
+
+arrow();
+// Callback Functions
+function num(n, callback) {
+  return callback(n);
+}
+// Immediately Invoked Function Expression (IIFE)
+const double = (n) => n * 2;
+
+console.log(num(5, double));
